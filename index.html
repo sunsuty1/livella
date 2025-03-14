@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LIVELLA - Elevating Life, Elevating Living</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #F5F5F5;
+            color: #333;
+        }
+        header {
+            background: linear-gradient(to right, #2E3A23, #D4AF37);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 24px;
+        }
+        .hero {
+            background-image: url('luxury_home.jpg');
+            height: 80vh;
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            font-size: 36px;
+            font-weight: bold;
+        }
+        .section {
+            padding: 50px;
+            text-align: center;
+        }
+        .gallery img {
+            width: 100%;
+            max-width: 600px;
+            margin: 10px;
+        }
+        .cta {
+            background: #D4AF37;
+            padding: 20px;
+            text-align: center;
+            font-size: 20px;
+            color: white;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .cta:hover {
+            background: #B8952E;
+        }
+        .contact-form {
+            background: #fff;
+            padding: 30px;
+            max-width: 500px;
+            margin: auto;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .contact-form button {
+            background: #2E3A23;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            border-radius: 5px;
+            font-size: 18px;
+        }
+        .contact-form button:hover {
+            background: #1D2817;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        LIVELLA - Elevating Life, Elevating Living
+    </header>
+    
+    <div class="hero">
+        Welcome to LIVELLA – A Modern Sanctuary of Prestige & Serenity
+    </div>
+    
+    <div class="section">
+        <h2>Luxury Meets Nature</h2>
+        <p>Designed to harmonize modern elegance with natural elements, LIVELLA offers an exclusive living experience for high-achieving individuals.</p>
+    </div>
+    
+    <div class="section gallery">
+        <h2>Architectural Excellence</h2>
+        <img src="interior_design.jpg" alt="Interior Design">
+        <img src="exterior_design.jpg" alt="Exterior Design">
+    </div>
+    
+    <div class="section">
+        <h2>Prime Location</h2>
+        <p>Conveniently situated near Don Mueang Airport and major highways, offering both accessibility and privacy.</p>
+    </div>
+    
+    <div class="cta" onclick="document.getElementById('contact').scrollIntoView();">
+        Schedule a Private Viewing
+    </div>
+    
+    <div class="section" id="contact">
+        <h2>Get in Touch</h2>
+        <form class="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <input type="tel" placeholder="Your Phone Number" required>
+            <textarea placeholder="Message" rows="4"></textarea>
+            <button type="submit">Submit Inquiry</button>
+        </form>
+    </div>
+</body>
+</html>
